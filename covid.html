@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="covid.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="covid.css" />
     <script defer src="covid.js"></script>
+ 
     <title>Covid Tracker</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="heading">
-            <h1> Covid 19 Tracker</h1>
-
+      <div class="heading">
+        <h1>Covid 19 Tracker</h1>
+      </div>
+      <div class="info">
+        <div class="head">
+          <h2>Total Cases</h2>
+          <h2>Deaths</h2>
+          <h2>Recovered</h2>
         </div>
-        <div class="info">
-            <div class="head">
-                <h2>Total Cases</h2>
-                <h2>Deaths</h2>
-                <h2>Recovered</h2>
 
-            </div>
-            
-            <div class="num">
-                <p class="total"></p>
-                <p class="death " ></p>
-                <p class="rec"></p>
-            </div>
-       
+        <div class="num">
+          <p class="total">1312</p>
+          <p class="death">312312</p>
+          <p class="rec">312312</p>
         </div>
+      </div>
+      <div class="city-search-container">
+        <input
+          type="text"
+          class="city-search"
+          data-city-search
+          placeholder="Enter Location"
+        />
+        <button class="sButton">Search</button>
+      </div>
     </div>
 
-    
-
     <!-- https://api.covid19api.com/summary -->
-</body>
+  </body>
 </html>
